@@ -3,7 +3,7 @@ module github.com/adam-cattermole/keycloak-client
 go 1.17
 
 require (
-	github.com/json-iterator/go v1.1.10
+	github.com/json-iterator/go v1.1.12
 	github.com/keycloak/keycloak-operator v0.0.0-20210506103913-57d81e278bcb
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.5.0
@@ -35,7 +35,7 @@ require (
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/mailru/easyjson v0.7.1 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-	github.com/modern-go/reflect2 v1.0.1 // indirect
+	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/openshift/api v3.9.0+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
