@@ -1,4 +1,4 @@
-module github.com/integr8ly/keycloak-client
+module github.com/adam-cattermole/keycloak-client
 
 go 1.17
 

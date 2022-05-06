@@ -1108,6 +1108,12 @@ func (c *Client) login(user, pass string) error {
 		return errors.Wrap(err, "error performing token request")
 	}
 	defer res.Body.Close()
+
+	if res.StatusCode != 200 && res.StatusCode != 201 {
+		logrus.Errorf("response receieved %+v", *res)
+		return fmt.Errorf("failed to login: (%d) %s, %s", res.StatusCode, res.Status, req.URL)
+	}
+
 	body, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		logrus.Errorf("error reading response %+v", err)
